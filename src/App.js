@@ -6,11 +6,13 @@ import Candybar from "./Candybar";
 import Chips from "./Chips";
 import Crackers from "./Crackers"
 import VendingMachine from "./VendingMachine";
+import NavBar from "./NavBar";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <NavBar />
         <Routes>
           <Route path="/chips" element={<Chips />} />
           <Route path="/candybar" element={<Candybar />} />
